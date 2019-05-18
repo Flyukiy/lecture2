@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loops in HTML</title>
+</head>
+<body>
+    <h1>Names: </h1>
+    <ul>
+    {% for name in names %}
+        <li>{{ name }}</li>
+    {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('lists') }}">List counts</a>
+</body>
+</html>
